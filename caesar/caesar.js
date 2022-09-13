@@ -56,10 +56,20 @@ function transformtext(text, verschiebung1) {
   return ergebnis;
 }
 
-// Hier machen wir die eigentliche Transformation eines Zeichens.
+
+/*
+wichtig: Buchstabenanzahl: 26 
+Buchstabe b -> im char ist es 98 
+
+wir starten bei -> 97 
+98 - 97 => 1 und das ist B 
+
+Addieren noch dazu die VErschiebung "temp" 
+
+*/
 function transformchar(charCode, startAsciiCode, temp) {
-  var temporary = parseInt(temp, 10);
-  var index = charCode - startAsciiCode;
+  var temporary = parseInt(temp, 10); // parse to int
+  var index = charCode - startAsciiCode;  
   var codeTransformed = index + temporary;
   if (codeTransformed > 25) {
     codeTransformed -= 26;
