@@ -1,53 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>Caesar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="icon.jpeg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <div class="row justify-content-center">
         <p class="" style="margin-top: 10px; text-align: center;" id="info_area"></p>
-
         <p>
           <form autocomplete="off">
-
             <div class="form-group">
               <label for="add-eintrag">Ihr Wort</label>
-              <input type="input" id="add-eintrag" class="form-control" name="wort" placeholder="Wort" />
+              <input type="input" id="add-eintrag" class="form-control  input-lg" name="wort" placeholder="Wort" />
             </div>
-            
             <div class="form-group">
               <label for="note">Verschiebung</label>
               <input type="number" id="add-eintrag" class="form-control" name="verschiebung" placeholder="Verschiebung" />
             </div>
-                 
-
             <input type="button" id="encode" class="btn btn-primary align-self-center" value="Encode" />
             <input type="button" id="decode" class="btn btn-primary align-self-center" value="Decode" />
           </form>
         </p>
       </div>
-      
       <br/>
-
       <div class="justify-content-center">
-
         <h2 id="encoding"></h2>
-
         <ul id="ergebnis" class="list-unstyled"></ul>
-
       </div>
-
-
     <script src="caesar.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
