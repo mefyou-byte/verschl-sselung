@@ -1,3 +1,4 @@
+// define all fields
 let wort = document.querySelector('input[name="wort"]');
 let verschiebungswert = document.querySelector('input[name="verschiebung"]');
 
@@ -7,13 +8,15 @@ let decode = document.getElementById("decode");
 
 let finalresult = document.querySelector("#ergebnis");
 
+// define finalizedencoded
 var finalizedencoded;
 
+// eventlistener 
 encode.addEventListener("click", function (event) {
   console.log(wort.value);
   console.log(verschiebungswert.value);
 
-  finalizedencoded = transformtext(wort.value, verschiebungswert.value);
+  finalizedencoded = transformtext(wort.value, verschiebungswert.value); // Code wird transformiert
   var li = document.createElement("li");
   li.className = "eintrag list-group-item";
   li.innerText = finalizedencoded;
@@ -32,6 +35,8 @@ decode.addEventListener("click", function (event) {
   finalresult.appendChild(li);
 });
 
+
+// start - end of Buchstaben in CharCode
 var kleinStart = "a".charCodeAt(0);
 var kleinEnd = "z".charCodeAt(0);
 var grossStart = "A".charCodeAt(0);
